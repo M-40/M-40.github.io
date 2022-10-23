@@ -1,0 +1,46 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border border-box;
+}
+ 
+ @font-face {
+    font-family: "Fasthand";
+    src: url(../fonts/Fasthand-Regular.ttf);
+ }
+
+body {
+    background-color: darkblue;
+    font-family: Fasthand;
+}
+
+main {
+    width: 70%;
+    padding: 50px;
+    margin: auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+ }
+
+ h1 {
+ 	width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: ##A91D11;
+}
+
+ .photo {
+ 	  width: calc(50% - 40px);
+      height: calc((35vw - 40px) / 16*9);
+      margin: 10px;
+      background-color: orange;
+      transition: all 0.5s ease;
+  }
+
+
+  .photo:hover {
+    transform: rotate(3deg) scale(1.07);
+  }
